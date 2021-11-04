@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@300;400;700;900&display=swap');
+
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+h1,h2,.secTwoBtn{
+    font-family: 'Fraunces', serif;
 }
 .navBar img{
     size: 200px;
@@ -19,23 +22,37 @@ body{
     justify-content: space-between;
     padding: 35px;
 }
+nav{
+    display: flex;
+    justify-content: center;
+ 
+}
 nav a{
-padding: 10px 20px 10px 20px;
-border: 0px solid transparent;
+width: 150px;
 font-size: 18px;
- padding-right: 40px;
- text-decoration: none;
- color: white;
+text-decoration: none;
+color: white;
+text-align: center;
+padding: 10px 0px 10px 0px;
+
 
 }
+nav a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+}
 
-.sectionOne{
+.secOne{
     background-image: url(/images/desktop/image-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     width: 100%;
-    height: 660px;
+    height: 630px;
 
 }
 .text{
@@ -43,10 +60,9 @@ font-size: 18px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 90px;
+    padding-top: 70px;
 }
 .text h1{
-    font-family: 'Fraunces', serif;
     color: white;
     font-size: 50px;
 }
@@ -55,13 +71,50 @@ font-size: 18px;
 }
 
 
-
-
-
-
 .attribution { 
     font-size: 11px; text-align: center; 
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+
+/*SECTION 2*/
+.secTwo{
+display: flex;
+  
+}
+.secTwoLeft, .secTwoRight{
+    flex: 50%;
+    height: 688px;
+}
+.secTwoRight{
+background-image: url(/images/desktop/image-transform.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top;
+}
+.secTwoLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 25px;
+    margin:0px 100px 0px 100px;
+}
+.secTwoTitle{
+    margin-bottom: 40px;
+}
+.secTwoText{
+    color: hsl(232, 10%, 55%);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+.secTwoBtn{
+    border: none;
+    background-color: transparent;
+    font-weight:bold;
+    font-size: 20px;
 }
