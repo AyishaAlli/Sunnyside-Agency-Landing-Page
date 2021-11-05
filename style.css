@@ -7,12 +7,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-h1,h2,.secTwoBtn{
+h1,h2,.secTwoBtn, .testimonialsTitle{
     font-family: 'Fraunces', serif;
 }
-.navBar img{
-    size: 200px;
-}
+
 body{
     font-family: 'barlow', sans-serif;
 }
@@ -71,50 +69,198 @@ nav a:hover{
 }
 
 
-.attribution { 
-    font-size: 11px; text-align: center; 
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
 
-
-/*SECTION 2*/
-.secTwo{
-display: flex;
-  
-}
-.secTwoLeft, .secTwoRight{
-    flex: 50%;
-    height: 688px;
-}
-.secTwoRight{
-background-image: url(/images/desktop/image-transform.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: top;
-}
-.secTwoLeft{
+/*SECTION 2,3 & 4 STANDARD LAYOUT*/
+.secTwo, .secThree, .secFour{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    font-size: 25px;
-    margin:0px 100px 0px 100px;
 }
-.secTwoTitle{
+
+.leftAndRight{
+    flex: 50%;
+    height: 600px;
+}
+
+.secTwoTitle, .secThreeTitle{
     margin-bottom: 40px;
 }
-.secTwoText{
+.secTwoText, .secThreeText{
     color: hsl(232, 10%, 55%);
     font-size: 24px;
     font-weight: 300;
     line-height: 40px;
     margin-bottom: 40px;
 }
-.secTwoBtn{
+.secTwoBtn, .secThreeBtn{
     border: none;
     background-color: transparent;
     font-weight:bold;
     font-size: 20px;
+}
+
+.secTwoLeft, .secThreeRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 25px;
+}
+
+
+.container{
+    margin:0px 100px 0px 100px;
+    
+}
+/*SECTION 2*/
+.secTwoRight{
+    background-image: url(/images/desktop/image-transform.jpg);
+}
+
+/*SECTION 3*/
+.secThreeLeft{
+    background-image: url(/images/desktop/image-stand-out.jpg);
+}
+
+/*SECTION 4*/
+.secFourRight{
+    background-image: url(/images/desktop/image-photography.jpg);
+}
+.secFourLeft{
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+}
+.secFourItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(212, 27%, 19%);
+    width: 300px;
+    margin: auto;
+    margin-top: 420px;
+    text-align: center;
+}
+.secFourTitle{
+    margin-bottom: 20px;
+}
+.secFourText{
+    line-height: 23px;
+    font-size: 13px;
+}
+
+
+/*TESTIMOINALS*/
+.testimonialSec{
+    text-align: center;
+    margin-top: 100px;
+}
+.testimonialsTitle{
+    color: hsl(210, 4%, 67%); 
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.testimonials{
+    display: flex;
+    justify-content: center;
+    padding: 50px 200px 50px 200px;
+    margin: auto;
+}
+.eachTestimonial{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;  
+    color: hsl(213, 9%, 39%);
+    width: 350px;
+    padding: 30px;
+}
+.eachTestimonial img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.eachTestimonial .name p{
+   color: black; 
+    font-size: 18px; 
+    font-family: 'Fraunces', serif; 
+    font-weight: bold;
+    margin-top: 50px;
+}
+.eachTestimonial .name span{
+    margin-top: 200px;
+    font-family: 'barlow', sans-serif;
+    font-weight: 400;
+    color: hsl(210, 4%, 67%); 
+    font-size: 12px;
+}
+
+/*Picture Section*/
+.pictureSec{
+    display: flex;
+    justify-content: center;
+    height: 450px;
+}
+.pictureSec div{
+    
+    flex: 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.picOne{
+    background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+}
+.picTwo{
+    background-image: url(/images/desktop/image-gallery-orange.jpg);
+}
+.picThree{
+    background-image: url(/images/desktop/image-gallery-cone.jpg);
+}
+.picFour{
+    background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+}
+
+
+
+footer{
+    background-color: hsl(168, 34%, 41%);
+    text-align: center;
+}
+footer .logo{
+    padding-top: 50px;
+    padding-bottom:30px;
+}
+
+footer .links a, footer .smLinks a{
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+}
+
+footer .links a{
+    padding-left:30px;
+    padding-right:30px;
+}
+footer .links a:hover{
+    color: white;
+}
+footer .smLinks a{
+    padding-left:10px;
+    padding-right:10px;
+    font-size: 20px;
+    
+}
+footer .smLinks a:hover{
+    color: white;
+}
+
+footer .smLinks{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
