@@ -67,12 +67,40 @@ nav a:hover{
 .text svg{
     margin-top:65px ;
 }
+/*SMALLER SCREEN*/
+/*MOBILE PHONE*/
 
 
 
 /*SECTION 2,3 & 4 STANDARD LAYOUT*/
+.secTwoRight, .secThreeLeft, .secFourLeft, .secFourRight{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .secTwo, .secThree, .secFour{
     display: flex;
+}
+@media screen and (max-width: 975px){
+    .secTwo, .secThree, .secFour{
+        text-align: center;
+    }
+    .secTwo {
+        flex-direction: column-reverse;
+        
+    }
+    .secThree, .secFour{
+        flex-direction: column;
+    } 
+    
+    .secTwoRight, .secThreeLeft{
+       padding-bottom:600px ;
+
+    } 
+    .secTwoLeft, .secThreeRight{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 .leftAndRight{
@@ -104,7 +132,8 @@ nav a:hover{
     align-items: flex-start;
     font-size: 25px;
 }
-
+/*SMALLER SCREEN*/
+/*MOBILE PHONE*/
 
 .container{
     margin:0px 100px 0px 100px;
@@ -144,6 +173,8 @@ nav a:hover{
     line-height: 23px;
     font-size: 13px;
 }
+/*SMALLER SCREEN*/
+/*MOBILE PHONE*/
 
 
 /*TESTIMOINALS*/
@@ -192,6 +223,8 @@ nav a:hover{
     color: hsl(210, 4%, 67%); 
     font-size: 12px;
 }
+/*SMALLER SCREEN*/
+/*MOBILE PHONE*/
 
 /*Picture Section*/
 .pictureSec{
@@ -221,13 +254,14 @@ nav a:hover{
 }
 
 
+/*FOOTER*/
 
 footer{
-    background-color: hsl(168, 34%, 41%);
+    background-color: RGB(143, 212, 198);
     text-align: center;
 }
 footer .logo{
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom:30px;
 }
 
@@ -254,11 +288,17 @@ footer .smLinks a:hover{
 }
 
 footer .smLinks{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 60px;
 }
+/*SMALLER SCREEN*/
+/*MOBILE PHONE*/
 
+
+/*ATTRIBUTIONS*/
 .attribution { 
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-size: 11px; text-align: center; 
 }
 .attribution a { 
