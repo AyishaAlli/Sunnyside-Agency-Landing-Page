@@ -12,17 +12,27 @@ h1,h2,.secTwoBtn, .testimonialsTitle{
 }
 
 body{
+    
     font-family: 'barlow', sans-serif;
+}
+.show{
+    display: flex;
+}
+.navBar i{
+    display: none;
 }
 .navBar{
     background-image: url(/images/mobile/image-header.jpg);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    
     padding: 35px;
 }
 nav{
     display: flex;
     justify-content: center;
+   
  
 }
 nav a{
@@ -42,6 +52,44 @@ nav a:hover{
     font-size: 18px;
     font-family: 'Fraunces', serif;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 650px){
+    .navBar i{
+        display: block;
+        color: white;
+    }
+    nav{
+        
+        width: 85%;
+        margin: auto;
+        top: 80px;
+        position:absolute ;
+        left: 30px;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+       padding-bottom: 20px;
+       padding-top: 20px;
+       display: none;
+       
+    }
+    nav a{
+        color: hsl(210, 4%, 67%);
+        line-height: 2rem;
+        
+    }
+    #contactLink{
+        margin-top: 1rem;
+        border: 0px solid transparent;
+        border-radius: 30px;
+        background-color: hsl(51, 100%, 49%);
+        text-transform: uppercase;
+        font-family: 'Fraunces', serif;
+        color: black;
+    }
+    
+    
 }
 
 .secOne{
@@ -81,7 +129,12 @@ nav a:hover{
 .secTwo, .secThree, .secFour{
     display: flex;
 }
-@media screen and (max-width: 975px){
+
+.secTwoLeft, .secThreeRight{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+@media screen and (max-width: 650px){
     .secTwo, .secThree, .secFour{
         text-align: center;
     }
@@ -97,10 +150,12 @@ nav a:hover{
        padding-bottom:600px ;
 
     } 
-    .secTwoLeft, .secThreeRight{
-        padding-top: 100px;
-        padding-bottom: 100px;
+   
+    .text h1{
+        text-align: center;
+        font-size: 60px;
     }
+    
 }
 
 .leftAndRight{
@@ -135,10 +190,17 @@ nav a:hover{
 /*SMALLER SCREEN*/
 /*MOBILE PHONE*/
 
-.container{
+@media screen and (min-width: 650px){
+   .container{
     margin:0px 100px 0px 100px;
-    
+   }
+   .secTwoLeft, .secThreeRight{
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
+}
+
+
 /*SECTION 2*/
 .secTwoRight{
     background-image: url(/images/desktop/image-transform.jpg);
@@ -172,6 +234,11 @@ nav a:hover{
 .secFourText{
     line-height: 23px;
     font-size: 13px;
+}
+@media screen and (max-width: 650px){
+    .secFourItems{
+        margin-top: 250px;
+    }
 }
 /*SMALLER SCREEN*/
 /*MOBILE PHONE*/
@@ -224,7 +291,14 @@ nav a:hover{
     font-size: 12px;
 }
 /*SMALLER SCREEN*/
+
 /*MOBILE PHONE*/
+@media screen and (max-width: 650px){
+    .testimonials{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 /*Picture Section*/
 .pictureSec{
@@ -238,6 +312,15 @@ nav a:hover{
     background-repeat: no-repeat;
     background-size: cover;
 
+}
+@media screen and (max-width: 650px){
+    .pictureSec{
+    
+       flex-flow: row wrap;
+    }
+    .pictureSec div{
+        flex: 50%;
+    }
 }
 
 .picOne{
@@ -293,7 +376,12 @@ footer .smLinks{
 }
 /*SMALLER SCREEN*/
 /*MOBILE PHONE*/
-
+@media screen and (max-width: 650px){
+    footer .links a{
+        padding-left:20px;
+        padding-right:20px;
+    }
+}
 
 /*ATTRIBUTIONS*/
 .attribution { 
