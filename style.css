@@ -196,7 +196,7 @@ nav a:hover {
 
 .secTwoBtn,
 .secThreeBtn {
-  line-height: 10px;
+  line-height: 15px;
 }
 .secTwoBtn div,
 .secThreeBtn div {
@@ -216,10 +216,6 @@ nav a:hover {
   opacity: 0.4;
 }
 
-.secTwoBtn div:hover,
-.secThreeBtn div:hover {
-  opacity: 0.9;
-}
 /*SMALLER SCREEN*/
 /*MOBILE PHONE*/
 
