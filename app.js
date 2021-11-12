@@ -5,4 +5,3 @@ bars.addEventListener('click', function showMenu(){
     navList.classList.toggle('show')
     console.log('hi')
 })
-
