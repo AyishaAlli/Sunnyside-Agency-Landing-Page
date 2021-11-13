@@ -188,11 +188,18 @@ nav a:hover {
   align-items: flex-start;
   font-size: 25px;
 }
-.secTwoBtn,
-.secThreeBtn {
-  /*border-bottom: 4px solid hlsa(6, 100%, 70%, 0.3);*/
+.secTwoBtn {
+  border-bottom: 4px solid rgba(255, 255, 0, 0.4);
 }
-
+.secThreeBtn {
+  border-bottom: 4px solid rgba(255, 138, 142, 0.3);
+}
+.secTwoBtn:hover {
+  border-bottom: 4px solid rgb(255, 255, 0);
+}
+.secThreeBtn:hover {
+  border-bottom: 4px solid rgb(255, 138, 142);
+}
 /*background-color: #ff7364;*/
 
 /*SMALLER SCREEN*/
