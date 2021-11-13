@@ -188,33 +188,12 @@ nav a:hover {
   align-items: flex-start;
   font-size: 25px;
 }
-.secTwoBtn p,
-.secThreeBtn p {
-  /*Make it come on top of underline*/
-  z-index: 1;
-}
-
 .secTwoBtn,
 .secThreeBtn {
-  line-height: 15px;
-}
-.secTwoBtn div,
-.secThreeBtn div {
-  position: absolute;
-  width: 120px;
-  height: 7px;
-  margin-bottom: 40px;
-  background-color: #ff7364;
-  opacity: 0.3;
-  border: 2px solid transparent;
-  border-radius: 20px;
-  z-index: -2;
+  /*border-bottom: 4px solid hlsa(6, 100%, 70%, 0.3);*/
 }
 
-.secTwoBtn div {
-  background-color: yellow;
-  opacity: 0.4;
-}
+/*background-color: #ff7364;*/
 
 /*SMALLER SCREEN*/
 /*MOBILE PHONE*/
