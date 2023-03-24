@@ -32,9 +32,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://sunnysideagencybyayisha.netlify.app/](https://sunnysideagencybyayisha.netlify.app/)
-- Live Site URL: [https://github.com/AyishaAlli/Sunnyside-Agency-Landing-Page](https://github.com/AyishaAlli/Sunnyside-Agency-Landing-Page)
+- Solution URL: [https://github.com/AyishaAlli/Sunnyside-Agency-Landing-Page](https://github.com/AyishaAlli/Sunnyside-Agency-Landing-Page)
 
+- Live Site URL: [https://sunnysideagencybyayisha.netlify.app/](https://sunnysideagencybyayisha.netlify.app/)
 ## My process
 
 I made the whole website first for desktop then made each section responsive
